@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix 3030</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a class="logo" href="#" aria-label="Netflix">
+                <img src="assets/netflix-logo.jpg" alt="Netflix">
+            </a>
+            <div class="nav-actions">
+                <select id="language-select" aria-label="Pilih bahasa">
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="en">English</option>
+                </select>
+                <button type="button" class="button button-small" id="login-button">Masuk</button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1 data-id="Lihat apa yang ditonton seluruh dunia" data-en="See what the whole world's watching">Lihat apa yang ditonton seluruh dunia</h1>
+            <p class="hero-text" data-id="Mulai dari IDR 54.000. Batalkan kapan saja." data-en="Starts at IDR 54,000. Cancel anytime.">Mulai dari IDR 54.000. Batalkan kapan saja.</p>
+            <p class="form-label" data-id="Siap menonton? Masukkan email untuk membuat atau memulai kembali keanggotaan." data-en="Ready to watch? Enter your email to create or restart your membership.">Siap menonton? Masukkan email untuk membuat atau memulai kembali keanggotaan.</p>
+            <form class="email-form" id="email-form">
+                <input type="email" id="email-input" placeholder="Alamat email" aria-label="Alamat email">
+                <button class="button" type="submit">Mulai</button>
+            </form>
+            <p class="form-message" id="form-message"></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section trending-section">
+            <div class="section-heading">
+                <div>
+                    <h2 data-id="Trending Sekarang" data-en="Trending Now">Trending Sekarang</h2>
+                </div>
+                <button type="button" class="outline-button" id="shuffle-button">Muat ulang</button>
+            </div>
+            <div class="movie-list" id="movie-list"></div>
+        </section>
+
+        <section class="section benefits-section">
+            <h2 data-id="Lebih banyak alasan untuk bergabung" data-en="More Reasons to Join">Lebih banyak alasan untuk bergabung</h2>
+            <div class="benefit-grid">
+                <article class="benefit-card">
+                    <h3 data-id="Nikmati di TV" data-en="Enjoy on your TV">Nikmati di TV</h3>
+                    <p data-id="Tonton di Smart TV, Playstation, Xbox, Chromecast, Apple TV, pemutar Blu-ray, dan banyak lagi." data-en="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.">Tonton di Smart TV, Playstation, Xbox, Chromecast, Apple TV, pemutar Blu-ray, dan banyak lagi.</p>
+                </article>
+                <article class="benefit-card">
+                    <h3 data-id="Download acara untuk ditonton offline" data-en="Download your shows to watch offline">Download acara untuk ditonton offline</h3>
+                    <p data-id="Simpan acara favorit dengan mudah dan selalu punya tontonan." data-en="Save your favorites easily and always have something to watch.">Simpan acara favorit dengan mudah dan selalu punya tontonan.</p>
+                </article>
+                <article class="benefit-card">
+                    <h3 data-id="Tonton di mana saja" data-en="Watch everywhere">Tonton di mana saja</h3>
+                    <p data-id="Streaming film dan acara TV tanpa batas lewat ponsel, tablet, laptop, dan TV." data-en="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.">Streaming film dan acara TV tanpa batas lewat ponsel, tablet, laptop, dan TV.</p>
+                </article>
+                <article class="benefit-card">
+                    <h3 data-id="Buat profil untuk anak" data-en="Create profiles for kids">Buat profil untuk anak</h3>
+                    <p data-id="Kirim anak-anak bertualang dengan karakter favorit mereka di ruang khusus." data-en="Send kids on adventures with their favorite characters in a space made just for them.">Kirim anak-anak bertualang dengan karakter favorit mereka di ruang khusus.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <h2 data-id="Pertanyaan yang sering diajukan" data-en="Frequently Asked Questions">Pertanyaan yang sering diajukan</h2>
+            <div class="faq-list" id="faq-list">
+                <article class="faq-item"><button class="faq-question" data-id="Apa itu Netflix?" data-en="What is Netflix?">Apa itu Netflix?<span>+</span></button><p class="faq-answer" data-id="Netflix adalah layanan streaming yang menawarkan berbagai acara TV, film, anime, dokumenter, dan banyak lagi." data-en="Netflix is a streaming service offering TV shows, movies, anime, documentaries, and more.">Netflix adalah layanan streaming yang menawarkan berbagai acara TV, film, anime, dokumenter, dan banyak lagi.</p></article>
+                <article class="faq-item"><button class="faq-question" data-id="Berapa biaya Netflix?" data-en="How much does Netflix cost?">Berapa biaya Netflix?<span>+</span></button><p class="faq-answer" data-id="Paket Netflix tersedia mulai dari IDR 54.000 sampai IDR 186.000 per bulan." data-en="Netflix plans range from IDR 54,000 to IDR 186,000 per month.">Paket Netflix tersedia mulai dari IDR 54.000 sampai IDR 186.000 per bulan.</p></article>
+                <article class="faq-item"><button class="faq-question" data-id="Di mana saya bisa menonton?" data-en="Where can I watch?">Di mana saya bisa menonton?<span>+</span></button><p class="faq-answer" data-id="Tonton di netflix.com melalui komputer atau perangkat yang terhubung internet seperti smart TV, ponsel, tablet, dan konsol game." data-en="Watch on netflix.com through a computer or internet-connected device such as a smart TV, phone, tablet, or game console.">Tonton di netflix.com melalui komputer atau perangkat yang terhubung internet seperti smart TV, ponsel, tablet, dan konsol game.</p></article>
+                <article class="faq-item"><button class="faq-question" data-id="Bagaimana cara membatalkan?" data-en="How do I cancel?">Bagaimana cara membatalkan?<span>+</span></button><p class="faq-answer" data-id="Netflix fleksibel. Kamu dapat membatalkan akun secara online kapan saja tanpa biaya pembatalan." data-en="Netflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation fees.">Netflix fleksibel. Kamu dapat membatalkan akun secara online kapan saja tanpa biaya pembatalan.</p></article>
+                <article class="faq-item"><button class="faq-question" data-id="Apa yang bisa ditonton di Netflix?" data-en="What can I watch on Netflix?">Apa yang bisa ditonton di Netflix?<span>+</span></button><p class="faq-answer" data-id="Netflix memiliki koleksi film, dokumenter, acara TV, anime, dan Netflix Originals yang terus bertambah." data-en="Netflix has an extensive library of feature films, documentaries, TV shows, anime, and award-winning Netflix originals.">Netflix memiliki koleksi film, dokumenter, acara TV, anime, dan Netflix Originals yang terus bertambah.</p></article>
+                <article class="faq-item"><button class="faq-question" data-id="Apakah Netflix cocok untuk anak-anak?" data-en="Is Netflix good for kids?">Apakah Netflix cocok untuk anak-anak?<span>+</span></button><p class="faq-answer" data-id="Profil Anak menyediakan pengalaman khusus dengan kontrol orang tua dan tontonan ramah keluarga." data-en="The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies.">Profil Anak menyediakan pengalaman khusus dengan kontrol orang tua dan tontonan ramah keluarga.</p></article>
+            </div>
+        </section>
+
+        <section class="signup-section">
+            <h2 data-id="Siap menonton?" data-en="Ready to watch?">Siap menonton?</h2>
+            <p data-id="Masukkan email untuk membuat atau memulai kembali keanggotaan." data-en="Enter your email to create or restart your membership.">Masukkan email untuk membuat atau memulai kembali keanggotaan.</p>
+            <form class="email-form" id="bottom-email-form">
+                <input type="email" placeholder="Alamat email" aria-label="Alamat email">
+                <button class="button" type="submit">Mulai</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-id="Pertanyaan? Hubungi 007-803-321-8275" data-en="Questions? Call 007-803-321-8275">Pertanyaan? Hubungi 007-803-321-8275</p>
+        <div class="footer-links">
+            <a href="#" data-id="FAQ" data-en="FAQ">FAQ</a>
+            <a href="#" data-id="Pusat Bantuan" data-en="Help Center">Pusat Bantuan</a>
+            <a href="#" data-id="Akun" data-en="Account">Akun</a>
+            <a href="#" data-id="Pusat Media" data-en="Media Center">Pusat Media</a>
+            <a href="#" data-id="Hubungan Investor" data-en="Investor Relations">Hubungan Investor</a>
+            <a href="#" data-id="Pekerjaan" data-en="Jobs">Pekerjaan</a>
+            <a href="#" data-id="Ketentuan Penggunaan" data-en="Terms of Use">Ketentuan Penggunaan</a>
+            <a href="#" data-id="Privasi" data-en="Privacy">Privasi</a>
+            <a href="#" data-id="Preferensi Cookie" data-en="Cookie Preferences">Preferensi Cookie</a>
+            <a href="#" data-id="Informasi Perusahaan" data-en="Corporate Information">Informasi Perusahaan</a>
+            <a href="#" data-id="Hubungi Kami" data-en="Contact Us">Hubungi Kami</a>
+            <a href="#" data-id="Pemberitahuan Hukum" data-en="Legal Notices">Pemberitahuan Hukum</a>
+        </div>
+        <p class="footer-brand">Netflix Indonesia</p>
+    </footer>
+
+    <div class="modal" id="movie-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">×</button>
+            <img class="modal-poster" id="modal-poster" src="" alt="">
+            <div class="modal-info">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-description" id="modal-description" data-id="Film populer yang sedang ditonton oleh pengguna di seluruh dunia. Klik mulai untuk menonton sekarang." data-en="Popular movie being watched by users around the world. Click start to watch now.">Film populer yang sedang ditonton oleh pengguna di seluruh dunia. Klik mulai untuk menonton sekarang.</p>
+                <button class="button modal-watch" id="modal-watch" data-id="Mulai menonton" data-en="Start watching">Mulai menonton</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
