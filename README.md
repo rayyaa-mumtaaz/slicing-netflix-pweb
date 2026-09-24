@@ -12,3 +12,7 @@ JavaScript digunakan untuk membuat poster film secara dinamis dengan DOM. JavaSc
 Array digunakan untuk menyimpan data film. Function digunakan untuk membuat kartu film, membuka modal, memeriksa form, dan mengganti bahasa. `if` digunakan untuk validasi email, sedangkan `forEach` digunakan untuk menampilkan beberapa film dan membaca beberapa elemen halaman.
 
 Materi CSS seperti Flexbox dan Grid dapat dilihat pada bagian navbar, form, daftar poster, kartu benefit, dan footer. Media query digunakan di bagian bawah `style.css` supaya tampilan menyesuaikan tablet dan mobile.
+
+## SS Preview
+
+<img width="1919" height="1151" alt="Screenshot 2026-09-24 150623" src="https://github.com/user-attachments/assets/bae45f50-3639-4841-a302-a817f86b49ff" />
